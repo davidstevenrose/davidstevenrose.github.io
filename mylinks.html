@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My Projects</title>
+		<link href="./Code/main.css" type="text/css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./Code/first-project.js"></script>
+		<script>
+		  function CCstart() {
+  var argu = document.getElementById("CCshift").value;
+  encrypt(argu);
+
+  }
+  function encrypt(x) {
+    var inp = document.getElementById("CCinput").value;
+    var h;
+    var encode = "";
+    for(h=0; h < inp.length; h++){
+	if (isNaN(x) !== true){
+	encode[h] = encode += inp.charCodeAt(h) - x + ".";//code will shift down due to concatonating bug
+		  document.getElementById("CCwrong").innerHTML = "";
+	}
+	else{
+     document.getElementById("CCwrong").innerHTML = "please enter a number";
+	 document.getElementById("CCoutput").innerHTML = "";
+	 }
+      } 
+	  	      document.getElementById("CCoutput").innerHTML = encode;
+}
+
+		</script>
+	</head>
+	
+	<body>
+	<div id="absolutePositionedObjects" style="position:absolute;">
+	<div id="cc" style="position: relative;left: 1225px;color: white;text-align: right;z-index:100">
+			<p>Your Message:<input type="text" value="" id="CCinput"><br />
+		Shift:<input type="text" value="0" id="CCshift"><br />
+		<button onclick="CCstart()">Encrypt</button></p>
+		<p id="CCoutput" style="color:white"></p><span id="CCwrong"><i>Please insert a number for the shift tab</i></span>
+	</div>	
+	</div>
+	<div id="home" style="position:absolute;" >
+<!-- no longer button. put self pic here -->
+		  <p id="house" ><img src="./Images/home.png" alt="home btn" height="100" /></p>
+</div>     
+<div id="menuBtn"  onclick="menuOpen(),disableScroll()" onmouseover="setTimeout(toolOn, 2000), toolCount()" onmouseout="setTimeout(toolOff, 100)">>><br />>><span id="tooltip">Open Main Menu</span></div>
+
+<div>
+<div style="width: 100%;overflow:hidden;background-color:black;">
+    <div style="width:auto; float: left;" id="top-left"> 
+	  	  <svg width="150" height="150">
+  		  <rect x="3.5" y="4" rx="30" ry="50" width="140" height="140"
+  		  style="fill:#00ff1e;stroke:black;stroke-width:5;opacity:0.5" /></svg>
+    </div>
+    <div id="top-right" > 
+	<p>David Rose</p>
+    </div>
+</div>
+	
+
+<!-- menu and page content will slide together -->
+
+	   <nav>
+		<ul id="navlist" >
+		  <li><a href="./html_project.html#home" target="_self" accesskey="1" onclick="menuClose(), enableScroll()">Home</a></li>
+		  <li><a href="#coversheet" accesskey="2" onclick="menuClose(), enableScroll()">Cover Sheet</a></li>
+		  <li><a href="#resume" accesskey="3" onclick="menuClose(), enableScroll()">My R&#233;sum&#233;</a></li>
+		  <li><a href="./mylinks.html" accesskey="4" onclick="menuClose(), enableScroll()">My Projects</a></li>
+		  <li><a onclick="stats()">Social</a></li>
+          <li><a id="ribbonCLose" onclick="menuClose(), enableScroll()">Close Menu</a></li>
+		</ul>
+		<!--<ul id="socialList">
+		  <li><a href="https://www.facebook.com/"><img src="./Images/facebook_like_buton.png" height="25" width="24" alt="." /></a><a href="https://plus.google.com/downgrade"><img src="./Images/googleplus.png" height="25" width="24" alt="."/></a></li> 
+		</ul>--> 
+	   </nav>
+	</div>
+<!-- end of header -->
+
+
+	<div class="textProjects">
+	 <h1>My Projects</h1>
+	 <div id="breif">
+	 <p>The works and links viewed on this page are either assignments or freeform projects I have been working on. I published my first works back in 2017, when I was a college freshman. I countinuosly uploaded projects ever since. I recommend opening these links in a Google Chrome browser or Firefox Browser.</p> 
+	 </div>
+	<div>
+		<table id="projectTable">
+		  <thead>
+			<tr>
+			<th><div class="borderOut"><div class="borderIn">Date of Publication</div></div></th>
+			<th><div class="borderOut"><div class="borderIn">Title</div></div></th>
+			<th><div class="borderOut"><div class="borderIn">Description</div></div></th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			<td><div class="borderOut"><div class="borderIn"> September 2017  </div></div></td>
+			<td><div class="borderOut"><div class="borderIn" ><a href="https://scratch.mit.edu/projects/175826113/" target="_blank"  style="text-decoration:none;"><img src="./Images/s.png" width="15" height="15" alt="S" />cratch</a></div></div></td>
+			<td><div class="borderOut"><div class="borderIn"><i>My Scratch project</i></div></div></td>
+			</tr>
+			<tr>
+			<td><div class="borderOut"><div class="borderIn"> --  </div></div></td>
+				<td><div class="borderOut"><div class="borderIn">Website Version History</div></div></td>
+			<td><div class="borderOut"><div class="borderIn"><em>Click here to view this website's past versions *beta</em></div></div></td>
+			</tr>
+			<tr>
+			<td><div class="borderOut"><div class="borderIn">11/9/2017</div></div></td>
+                <td><div class="borderOut"><div class="borderIn"><a href="js-project.html" target="_blank">Firts JavaScript Programms</a></div></div></td>
+			<td><div class="borderOut"><div class="borderIn"><em>My first three programms written in JS and integrated in HTML</em></div></div></td>
+			</tr>
+			<tr>
+			<td><div class="borderOut"><div class="borderIn">12/8/2017</div></div></td>
+				<td><div class="borderOut"><div class="borderIn"><a href="https://www.linkedin.com/in/david-rose-0bb752154/" target="_blank">LinkedIn</a></div></div></td>
+			<td><div class="borderOut"><div class="borderIn">My LinkedIn profile</div></div></td>
+			</tr>
+			<tr>
+			<td><div class="borderOut"><div class="borderIn">12/12/17</div></div></td>
+				<td><div class="borderOut"><div class="borderIn"><a href="/giftcards.docx" download>Gift Cards</a></div></div></td>
+			<td><div class="borderOut"><div class="borderIn"><em>My gift card flyer for Texas Roadhouse every season</em></div></div></td>
+			</tr>
+		  </tbody>
+		</table>
+	</div>
+
+    </div>
+		<div id="pageBtm" style="margin-top:-226px;width:100%;">
+	<div style="float:left;margin-left:800px;">
+	<table>
+	<thead>
+	<tr>
+	<td>
+	<nav style="width:200px;margin-right:00px;border-right:1px solid white;"> <!-- position:relative;left:1210px; -->
+		<ul style="list-style-type:none;line-height:30px;">
+		  <li style="font-family:arial;text-align:left;"><b>Navigate</b></li>
+		  <li><a href="./html_project.html" target="_self" accesskey="1">Home</a></li>
+		  <li><a href="./html_project.html#coversheet" accesskey="2">Cover Sheet</a></li>
+		  <li><a href="./html_project.html#resume" accesskey="3" >My R&#233;sum&#233;</a></li>
+		  <li><a href="./mylinks.html" accesskey="4">My Projects</a></li>
+		  <li><a onclick="stats()">Social</a></li>
+		</ul>
+	</nav>
+	<!-- </div></div> --></td>
+	<td><div style="margin: 0 100px 0 50px;">
+	<img src="./Images/facebook_like_buton.png" width="50" height="50" alt="fb" /></div>
+	<!-- </div></div> --></td>
+	<td>
+	<div style="margin: 0 100px 0 0;">
+	<img src="./Images/googleplus.png" width="50" height="50" alt="gp" /></div>
+	<!-- </div></div> --></td>
+	<td>
+	<div style="margin: 0;">
+	<img src="nothing-here-for-now.png" width="50" height="50" alt="canvas" /></div>
+	<!-- </div></div> --></td>
+	</tr>
+	</thead>
+	</table>
+	</div>
+	<footer id="copyright">
+	<i style="font-size:11px;color:#adc1d2;">Site design by David Rose, made possible from FGCU. Copywrited images used without intent to infringe user licences.</i>
+	</footer>
+	</div>
+	</body>
+</html>

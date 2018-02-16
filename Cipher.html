@@ -1,0 +1,33 @@
+<!--  Usability project -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Random Title</title>
+</head>
+<body>
+  <p>Your Message:<input type="text" value="" id="CCinput"><br />
+     Shift:<input type="text" value="" id="CCshift"><br />
+  <button onclick="start()">Encrypt</button></p>
+  <p id="CCoutput"></p>
+  <script>
+  function start() {
+  var argu = document.getElementById("CCshift").value;
+  encrypt(argu);
+  }
+  function encrypt(x) {
+    var inp = document.getElementById("CCinput").value;
+    var h;
+    var encode = "";
+    for(h=0; h < inp.length; h++){
+      encode[h] = encode += inp.charCodeAt(h) - x + ".";//code will shift down due to concatonating bug
+	 
+      }
+	  
+      document.getElementById("CCoutput").innerHTML = encode;	  
+    }
+  </script>
+  <p id="test"></p>
+</body>
+</html>
