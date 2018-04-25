@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -17,28 +18,28 @@
     var encode = "";
     for(h=0; h < inp.length; h++){
 	if (isNaN(x) !== true){
-	encode[h] = encode += inp.charCodeAt(h) - x + ".";//code will shift down due to concatonating bug
-		  document.getElementById("CCwrong").innerHTML = "";
+	    encode[h] = encode += inp.charCodeAt(h) - x + ".";//code will shift down due to concatonating bug
+	    document.getElementById("CCwrong").innerHTML = "";
 	}
 	else{
-     document.getElementById("CCwrong").innerHTML = "please enter a number";
-	 document.getElementById("CCoutput").innerHTML = "";
+             document.getElementById("CCwrong").innerHTML = "please enter a number";
+	     document.getElementById("CCoutput").innerHTML = "";
 	 }
       } 
-	  	      document.getElementById("CCoutput").innerHTML = encode;
-}
+	document.getElementById("CCoutput").innerHTML = encode;
+    }
 
 		</script>
 	</head>
 	
 	<body>
 	<div id="absolutePositionedObjects" style="position:absolute;">
-	<div id="cc" style="position: relative;left: 1225px;color: white;text-align: right;z-index:100">
-			<p>Your Message:<input type="text" value="" id="CCinput"><br />
-		Shift:<input type="text" value="0" id="CCshift"><br />
-		<button onclick="CCstart()">Encrypt</button></p>
+	    <div id="cc" style="position: relative;left: 1225px;color: white;text-align: right;z-index:100">
+		<p>Your Message:<input type="text" value="" id="CCinput"><br />
+		    Shift:<input type="text" value="0" id="CCshift"><br />
+		    <button onclick="CCstart()">Encrypt</button></p>
 		<p id="CCoutput" style="color:white"></p><span id="CCwrong"><i>Please insert a number for the shift tab</i></span>
-	</div>	
+	    </div>	
 	</div>
 	<div id="home" style="position:absolute;" >
 <!-- no longer button. put self pic here -->
@@ -63,7 +64,7 @@
 
 	   <nav>
 		<ul id="navlist" >
-		  <li><a href="./html_project.html#home" target="_self" accesskey="1" onclick="menuClose(), enableScroll()">Home</a></li>
+		  <li><a href="./index.html#home" target="_self" accesskey="1" onclick="menuClose(), enableScroll()">Home</a></li>
 		  <li><a href="#coversheet" accesskey="2" onclick="menuClose(), enableScroll()">Cover Sheet</a></li>
 		  <li><a href="#resume" accesskey="3" onclick="menuClose(), enableScroll()">My R&#233;sum&#233;</a></li>
 		  <li><a href="./mylinks.html" accesskey="4" onclick="menuClose(), enableScroll()">My Projects</a></li>
@@ -87,36 +88,36 @@
 		<table id="projectTable">
 		  <thead>
 			<tr>
-			<th><div class="borderOut"><div class="borderIn">Date of Publication</div></div></th>
-			<th><div class="borderOut"><div class="borderIn">Title</div></div></th>
-			<th><div class="borderOut"><div class="borderIn">Description</div></div></th>
+				<th><div class="borderOut"><div class="borderIn">Date of Publication</div></div></th>
+				<th><div class="borderOut"><div class="borderIn">Title</div></div></th>
+				<th><div class="borderOut"><div class="borderIn">Description</div></div></th>
 			</tr>
 		  </thead>
 		  <tbody>
 			<tr>
-			<td><div class="borderOut"><div class="borderIn"> September 2017  </div></div></td>
-			<td><div class="borderOut"><div class="borderIn" ><a href="https://scratch.mit.edu/projects/175826113/" target="_blank"  style="text-decoration:none;"><img src="./Images/s.png" width="15" height="15" alt="S" />cratch</a></div></div></td>
-			<td><div class="borderOut"><div class="borderIn"><i>My Scratch project</i></div></div></td>
+				<td><div class="borderOut"><div class="borderIn"> September 2017  </div></div></td>
+				<td><div class="borderOut"><div class="borderIn"><a href="https://scratch.mit.edu/projects/175826113/" target="_blank"  style="text-decoration:none;"><img src="./Images/s.png" width="15" height="15" alt="S" />cratch</a></div></div></td>
+				<td><div class="borderOut"><div class="borderIn"><p style="text-indent:0;margin:0;position:relative;bottom:12px;font-style:italic;">My Scratch project</p></div></div></td>
 			</tr>
 			<tr>
-			<td><div class="borderOut"><div class="borderIn"> --  </div></div></td>
-				<td><div class="borderOut"><div class="borderIn">Website Version History</div></div></td>
-			<td><div class="borderOut"><div class="borderIn"><em>Click here to view this website's past versions *beta</em></div></div></td>
+				<td><div class="borderOut"><div class="borderIn">1/1/2018</div></div></td>
+				<td><div class="borderOut"><div class="borderIn"><a href="./Resume.docx" target="_blank" download>My Resume</a></div></div></td>
+				<td><div class="borderOut"><div class="borderIn"><p style="text-indent:0;margin:0;position:relative;bottom:12px;font-style:italic;">A download for my Resume on Word.</p></div></div></td>
 			</tr>
 			<tr>
-			<td><div class="borderOut"><div class="borderIn">11/9/2017</div></div></td>
-                <td><div class="borderOut"><div class="borderIn"><a href="js-project.html" target="_blank">Firts JavaScript Programms</a></div></div></td>
-			<td><div class="borderOut"><div class="borderIn"><em>My first three programms written in JS and integrated in HTML</em></div></div></td>
+				<td><div class="borderOut"><div class="borderIn">11/9/2017</div></div></td>
+                		<td><div class="borderOut"><div class="borderIn"><a href="js-project.html" target="_blank">First JavaScript Programms</a></div></div></td>
+				<td><div class="borderOut"><div class="borderIn"><p style="text-indent:0;margin:0;position:relative;bottom:12px;font-style:italic;">My first three programms written in JS and integrated in HTML</p></div></div></td>
 			</tr>
 			<tr>
-			<td><div class="borderOut"><div class="borderIn">12/8/2017</div></div></td>
+				<td><div class="borderOut"><div class="borderIn">4/24/2018</div></div></td>
+                		<td><div class="borderOut"><div class="borderIn"><a href="https://github.com/davidstevenrose" target="_blank" >My Github Page</a></div></div></td>
+				<td><div class="borderOut"><div class="borderIn"><p style="text-indent:0;margin:0;position:relative;bottom:12px;font-style:italic;">I will be posting most of my programs on Github.<br /> I will try to regulary commit to my Github account.</p></div></div></td>
+			</tr>
+			<tr>
+				<td><div class="borderOut"><div class="borderIn">12/8/2017</div></div></td>
 				<td><div class="borderOut"><div class="borderIn"><a href="https://www.linkedin.com/in/david-rose-0bb752154/" target="_blank">LinkedIn</a></div></div></td>
-			<td><div class="borderOut"><div class="borderIn">My LinkedIn profile</div></div></td>
-			</tr>
-			<tr>
-			<td><div class="borderOut"><div class="borderIn">12/12/17</div></div></td>
-				<td><div class="borderOut"><div class="borderIn"><a href="/giftcards.docx" download>Gift Cards</a></div></div></td>
-			<td><div class="borderOut"><div class="borderIn"><em>My gift card flyer for Texas Roadhouse every season</em></div></div></td>
+				<td><div class="borderOut"><div class="borderIn"><p style="text-indent:0;margin:0;position:relative;bottom:12px;font-style:italic;">My LinkedIn profile</p></div></div></td>
 			</tr>
 		  </tbody>
 		</table>
@@ -129,12 +130,12 @@
 	<thead>
 	<tr>
 	<td>
-	<nav style="width:200px;margin-right:00px;border-right:1px solid white;"> <!-- position:relative;left:1210px; -->
+	<nav style="width:200px;margin-right:00px;border-right:1px solid white;"> 
 		<ul style="list-style-type:none;line-height:30px;">
 		  <li style="font-family:arial;text-align:left;"><b>Navigate</b></li>
-		  <li><a href="./html_project.html" target="_self" accesskey="1">Home</a></li>
-		  <li><a href="./html_project.html#coversheet" accesskey="2">Cover Sheet</a></li>
-		  <li><a href="./html_project.html#resume" accesskey="3" >My R&#233;sum&#233;</a></li>
+		  <li><a href="./index.html" target="_self" accesskey="1">Home</a></li>
+		  <li><a href="./index.html#coversheet" accesskey="2">Cover Sheet</a></li>
+		  <li><a href="./index.html#resume" accesskey="3" >My R&#233;sum&#233;</a></li>
 		  <li><a href="./mylinks.html" accesskey="4">My Projects</a></li>
 		  <li><a onclick="stats()">Social</a></li>
 		</ul>
