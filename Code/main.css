@@ -24,6 +24,11 @@ hr {
 	width:80%;
 }
 
+ul {
+	list-style-type: inside;
+	margin-left: 110px;
+}
+
 a:hover {
 	color: red;
 }
@@ -127,58 +132,52 @@ a:hover {
 	z-index: 1;
 }
 
-/*#menuBtn:hover #tooltip{
-	visibility: visible;
-}*/
-
-#house {
-	position:relative;
-	top:-5px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	width: 146px;
-	text-align:center;
-	
+/*prototype animation for future logo*/
+#aniTest :hover {
+	animation-name: logo;
+	animation-duration: 3s;
 }
-
-#home a:hover{}
+@keyframes logo {
+0% {left: 50px;}
+50% {left: 60px;}
+100% {left: 50px;}
+}
 
 #div-header-Main{
 	width: 100%;
 	overflow:hidden;
-	background-color:black;
+	background-color:#0074bd;
 }
 
 #top-left {
 	float:left;
-    width: 145px;
-	border-left: 3px solid black;
-	border-top: 3px solid black;
-	border-right: 3px solid black;
-	border-bottom: 3px solid black;
+    	width: 145px;
+	border-left: 3px;
+	border-top: 3px;
+	border-right: 3px;
+	border-bottom: 3px;
 }	
 
 #top-right{
 	position:relative;
 	right: 450px;
-	margin-left: 610px;
-    margin-bottom: 0;
+	margin-left: 606px;
+    	margin-bottom: 0;
 	width: 100%
 }
 
-#top-right p{ 
+#top-right p{
+	color: white; 
 	width: 600px;
 	text-align: left;
 	padding: 1px; 
-    border-width: 10px;
-    border-style: groove;
-    border-color: white;/*rgb(10, 63, 14); alt color*/
-    margin-top: 3px;
-    margin-bottom: 3px;
-   background-color:#00b600;
-    animation-name: size;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
+    	border-width: 10px;
+   	border-color: white; /*rgb(10, 63, 14); alt color*/
+   	margin-top: 3px;
+   	margin-bottom: 3px;
+    	animation-name: size;
+    	animation-fill-mode: forwards;
+    	animation-duration: 2s;
 	}
 @keyframes size{
 from{font-size: 10px;}
@@ -242,8 +241,7 @@ to{font-size: 113px;}}
 }
 
 #access {
-	position:relative;
-	left:150px;
+	
 }
 
 #access-this-web{
@@ -332,6 +330,10 @@ to{font-size: 113px;}}
 	background-color: #981fef;
 }
 
+p.tableDescription {
+	margin-top:-12px;position:relative;bottom:12px;font-style:italic;
+}
+
 .borderOut {
 	border: 20px groove #f48822;
 	background-color: white;
@@ -340,4 +342,7 @@ to{font-size: 113px;}}
 .borderIn {
 	padding: 15px;
 	text-align: left;
+	
 }
+
+
