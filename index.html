@@ -1,0 +1,217 @@
+<!DOCTYPE html><!--short URL: http://bit.ly/2BV5S5X -->
+<html lang="en">
+   <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="./Code/main.css" type="text/css" rel="stylesheet">
+      <style>
+         @import url('https://fonts.googleapis.com/css?family=Raleway')
+	  </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="./Code/first-project.js"></script>      
+      <link rel="shortcut icon" href="./Images/old-computer.ico" type="image/x-icon"/>
+      <title>David Rose</title>
+      <meta name="Keywords" content="Resume,Coversheet,David,Rose,Software,Job,Application,Demonstration,Web,Development,Vansaleo,FGCU"/>
+      <meta name="Description" content="View the web coversheet for David Rose, a student at Florida Gulf Coast University focousing in software engineering"/>
+      <meta name="author" content="David Rose"/>
+      <meta name="version" content="0.8.2"/>
+      <noscript>
+         <style>
+            #navlist {
+            left: 0;
+            }
+         </style>
+      </noscript>
+   </head>
+   <body>
+      <div id="absolutePositionedObjects">
+         <div style="left:1457px;top:150px;position:absolute;">
+            <img src="./Images/top-half.jpg" alt="Picture of FGCU" width="300" />
+         </div>
+         <div style="left:1457px;top:765px;position:absolute;">
+            <img src="./Images/bottom-half.jpg" alt="Picture of FGCU" width="300" />
+         </div>
+         <div style="position:absolute;top:715px;left:1457px;">
+            <canvas id="sidebar1" width="300" height="100">
+               <script>
+                  var c = document.getElementById("sidebar1");var ctx = c.getContext("2d");
+                  ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(0,50);ctx.lineTo(300,50);ctx.lineTo(300,0);ctx.lineTo(0,0);ctx.stroke();//blue
+                  ctx.fillStyle  = "navy";ctx.fill();
+                    
+               </script>
+            </canvas>
+         </div>
+         <div id="overlay"></div>
+	  </div>
+      <div>
+         <div id="div-header-Main">
+            <div id="top-left" onclick="rotateIcon()" onmouseover="setTimeout(toolOn, 2000), toolCount()" onmouseout="setTimeout(toolOff, 100)" style="width:150px;height:150px;">
+					 <img id="smallGearAni" src="./images/smallGearAni.png" width="50" height="50" alt="missing"/>
+					 <img id="largeGearAni" src="./images/largeGearAni.png" width="75" height="75" alt="missing"/>
+					 <span id="menuSpan"> Open Menu </span>
+            </div>
+            <div id="top-right">
+               <p>David Rose</p>
+            </div>
+         
+         <!-- menu and page content will slide together -->
+         <nav>
+            <ul class="navlist" >
+               <li><a href="#home" target="_self" accesskey="1" onclick="menuClose(), enableScroll()">Home</a></li>
+               <li><a href="#coversheet" accesskey="2" onclick="menuClose(), enableScroll()">Cover Sheet</a></li>
+               <li><a href="#resume" accesskey="3" onclick="menuClose(), enableScroll()">My R&#233;sum&#233;</a></li>
+               <li><a href="./mylinks.html" accesskey="4" onclick="menuClose(), enableScroll()">My Projects</a></li>
+               <li><a onclick="stats()">Social</a></li>
+               <li><a id="ribbonCLose" onclick="menuClose(), enableScroll()">Close Menu</a></li>
+            </ul>
+            <!--<ul id="socialList">
+               <li><a href="https://www.facebook.com/"><img src="./Images/facebook_like_buton.png" height="25" width="24" alt="." /></a><a href="https://plus.google.com/downgrade"><img src="./Images/googleplus.png" height="25" width="24" alt="."/></a></li> 
+               </ul>--> 
+         </nav>
+      </div>
+      <!-- end of header -->
+      <div class="text">
+         <div id="myname">
+            <div>
+               <canvas id="titleCanvas" height="100" width="1000" style="border:2px solid teal">
+                  <script>
+                     var c = document.getElementById("titleCanvas");var ctx = c.getContext("2d");
+                     ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(450,0);ctx.lineTo(250,100);ctx.lineTo(0,100);ctx.closePath();ctx.fillStyle = "#EFFE17";ctx.fill();ctx.stroke();//yello
+                     ctx.beginPath();ctx.moveTo(451,0);ctx.lineTo(999,0);ctx.lineTo(799,100);ctx.lineTo(251,100);ctx.closePath();ctx.fillStyle = "#2E17FE";ctx.fill();ctx.stroke();//blue
+                     ctx.beginPath();ctx.moveTo(1000,0);ctx.lineTo(750,0);ctx.lineTo(550,100);ctx.lineTo(1000,100);ctx.closePath();ctx.fillStyle = "#FD3232";ctx.fill();ctx.stroke();//red
+                     ctx.font = "30px Arial";ctx.textAlign = "center";ctx.fillStyle = "white";ctx.fillText("Who I Am", c.width/2 , c.height/2);
+                  </script>Who I Am
+               </canvas>
+            </div>
+            <div class="bio">
+               <h3>A Breif Overview of Myself</h3>
+               <p>Hello reader! My name is <b>David Rose</b> and I am currently a student at Florida Gulf Coast University.
+                  I have been carrying my aspirations since I was a little child. I was born in
+                  Brick Township, New Jersey. I moved down to Naples, Florida when I was two, and have lived there ever since.
+                  When growing up, I was fascinated by the architecture of Legos and I set myself a path to become an architect.
+                  When I grew older, I came to adore computer games and applications and I decided to focus my interests in computers.
+                  Some of my milestones include creating and executing the construction of a new garden for a <a href="https://www.graceplacenaples.org/" target="_blank" id="local">local</a> non-profit organization, demonstrating
+                  leadership within the Boy Scouts of America, and getting accepted into an ABET accredited university in computer programming.
+               </p>
+               <p>
+                  A few experiences I would like to share include participating in an exclusive hiking expedition and viewing 
+                  inspiring Ted Talks about technology around the country. In my hiking expedition, I hiked along the Appalachian trail
+                  for three days, and settled in a Boy Scout summer camp for a week. My expedition demonstrates the leadership and
+                  resilience that I preform to overcome any situation. I have also expanded my thought process by observing several TED 
+                  talks and viewing many more online.
+               </p>
+               <br />
+               <hr>
+			   <h3>Life Goals</h3>
+			   <p>During the years I was in high school and college, I developed a set of important life goals. In high school, I learned that I should not
+				be so dependent on the cirriculum provided to me, as my high school education was only scratching the surface of knowledge. I set my mind to
+				be willing to learn anything when I come across knowledge. Being said that these mind sets only occured to me recently, the biggest aspiration
+				for as long I could remember was to become an engineer. I always enjoyed building solutions to problems, whether it be a program or something
+				made out of legos, and I made it a hobby for me once I got more time to focous on what I admire. One of the most important factors when 
+				acheiving your life goals, in my opinion, is having a great attention span towards your admirations.</p>
+				<br />
+				<hr>
+               <h3>A Field Report on Computer Science</h3>
+               <p>The studies of technology can be
+                  broken down into several areas, including, but not limited to, computer science, software engineering, and information technology. Computer
+                  science is the science of teaching machines how to store, execute, and display data. Software engineering is a specific branch of computer 
+                  science; it is the design, development, and testing of application code. Information technology is not as constructive as Software engineering;
+                  it is the organization and interpretation of information stored in machines. Other branches include Digital engineering, the design and development
+                  of electronic components, and Integrated Circuit engineering, the development of computer chips. Computer science encompasses all of these
+                  fields because each field involves understanding how to make inanimate objects preform logic using physics.
+               </p>
+               <p>
+                  I am most interested in Software engineering, more specifically, Cyber-Security. As our society progresses into new generations of technology,
+                  new threats will be formulated and cause massive difficulties in reliable internet. This will create a high demand for young engineering graduates
+                  and comes with good starting salaries. Aside from the obvious, the reason I wish to fight Cybercrime is so I know that the online world becomes
+                  a safer place for me and everyone else. Computer science will help me become the programmer I want to be by not only teaching me how to create
+                  a code that hackers can get around using the backdoor, but by understanding the logic of computers and humans together, so I can have my 64-bit 
+                  bloodhound wait for them behind the backdoor. In a bigger context, Computer science, along with other related courses, is only a catalyst in education;
+                  an engineer truly reaches great outcomes by learning how to expand his or her thought process. On that note, I would not recommend any scientist
+                  or graduate to mimic the process of a robot or a CPU.
+               </p>
+            </div>
+         </div>
+         <hr>
+         <div id="coversheet">
+            <h1>My Coversheet</h1>
+            <p>As one may see, I have a good-standing set of skills in HTML, CSS, and Javascript. My resume describes everything I am experienced and skilled at, but
+               that won't define me as unique, as anyone can reasonable have the same amount of skills as I have. I argue that I am unique because of how I attained these
+               experiences. I have also attained a good sence of the world of work, as my previous jobs and internships taught me that life is no easy stoll in the park 
+               like high school was.
+            </p>
+            <p id="covertest"></p>
+         </div>
+         <div id="resume">
+            <p><strong>Click this <a href="./Resume.docx" download>link</a> to download my R&#233;sum&#233; .</strong></p>
+            <!-- <li>Hish School alma mater: Naples High School (<em>cum laude</em>)(2017)</li> -->
+         </div>
+         <hr>
+         <div id="usability">
+            <h1>How this page is User friendly</h1>
+            <p>Disabilities that user may have that could prevent optimal use of a website include vision, low coordinal movment and lack of computer drives (i.e. mouse).
+               This websie has been designed to meed the demands of those in need. The text font has been increased to a large print to allow those with troubled
+               vision to see better. There is also no contrast with any elements or texts. Users may also lack speedy motor skills. To meet the demand for this, animations
+               move slower than normal and these users may read at a pace they wish to have. The text should be easy and understandable to read. For those users that lack 
+               certain tools and only have a keyboard, all the necessary links to other pages are binded with keyboard shortcuts. All navigation remains on the same page
+               to provide an easy access back to the home page and to prevent tab overflow. For users running their browsers without javascript or up-to-date software, friendly
+               alternatives have been added to the webpage.
+            </p>
+         </div>
+         <h4 id="access-this-web">Access this webpage using keyboard shortcuts:</h4>
+         <ul id="access">
+            <li>1 - Home Page</li>
+            <li>2 - My Coversheet</li>
+            <li>3 - My Resume</li>
+            <li>4 - My Projects</li>
+         </ul>
+         <span style="position:relative;left:180px;"><em>IE, Chrome, Safari, Opera 15+: [ALT] + accesskey-- Opera prior version 15: Please upgrade --Firefox: [ALT] [SHIFT] + accesskey</em></span>
+         <div>
+            <hr>
+            <p><a id="share" href="https://fgcu.instructure.com/courses/491808/discussion_topics" target="_blank">SHARE</a> on FGCU!</p>
+            <p style="margin-bottom: 0;padding-bottom: 18px;"><a id="like" href="like_html.html" target="_blank" >LIKE</a> on Facebook!</p>
+         </div>
+        </div>
+      <div id="pageBtm">
+         <div id="copyright">
+            <i style="font-size:11px;color:#adc1d2;">Site design by David Rose, made possible from FGCU. Copyrighted images used without intent to infringe user licences.</i>
+         </div>
+         <div id="pageBtm-topDiv">
+            <table>
+               <thead>
+                  <tr>
+                     <td>
+                        <nav>
+                           <ul class="pageBtm-nav-ul">
+                              <li style="font-family:arial;text-align:left;"><b>Navigate</b></li>
+                              <li><a href="#home" target="_self" accesskey="1">Home</a></li>
+                              <li><a href="#coversheet" accesskey="2">Cover Sheet</a></li>
+                              <li><a href="#resume" accesskey="3" >My R&#233;sum&#233;</a></li>
+                              <li><a href="./mylinks.html" accesskey="4">My Projects</a></li>
+                              <li><a onclick="stats()">Social</a></li>
+                           </ul>
+                        </nav>
+                     </td>
+                     <td>
+                        <div style="margin: 0 100px 0 50px;">
+							<a href="like_html.html" target="_blank">
+								<img src="./Images/facebook_like_buton.png" width="50" height="50" alt="fb" />
+							</a>
+                        </div>
+                     </td>
+                     <td>
+                        <div style="margin: 0 100px 0 0;">
+							<a href="https://www.linkedin.com/in/david-rose-0bb752154" target="_blank">
+								<img src="./Images/linkedinLogo.png" width="50" height="50" alt="li" />
+							</a>
+                        </div>
+                     </td>
+                  </tr>
+               </thead>
+            </table>
+         </div>
+      </div>
+   </body>
+</html>
+<!--"Those who fail in finding knowledge and attitude will become diseased with hypocracy and procrastination, and will be scared with the burden of simplicity."-->
+<!--"He may have had bad breath, but he had a good heart." Salman Rushdie-->
