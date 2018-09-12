@@ -1,0 +1,20 @@
+/*js-project*/
+.imp {
+	font-size: 200%;
+}
+
+#ee {
+	font-size: 25%;
+	font-style: italic;
+}
+
+#here {
+	text-decoration: none;
+}
+
+#version {
+	text-align: center;
+	position:fixed;
+	left: 10px;
+	top: 10px;
+}
